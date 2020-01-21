@@ -35,6 +35,13 @@ public class QueryProcessor {
         else if (query.contains("Theresa")) {
             return "2016";
         }
+        else if (query.contains("minus")) {
+            int index = query.indexOf("minus");
+            int indexOfIs = query.indexOf("is");
+            int firstNum = Integer.valueOf(query.substring(indexOfIs + 3, index).trim());
+            int secondNum = Integer.valueOf(query.substring(index + 6));
+            return String.valueOf(firstNum - secondNum);
+        }
 
         return "";
     }

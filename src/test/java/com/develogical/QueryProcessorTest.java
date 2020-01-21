@@ -34,4 +34,9 @@ public class QueryProcessorTest {
     public void knowsAboutTheresa() throws Exception {
         assertThat(queryProcessor.process("bedf66a0:%20which%20year%20was%20Theresa%20May%20first%20elected%20as%20the%20Prime%20Minister%20of%20Great%20Britain"), containsString("2016"));
     }
+
+    @Test
+    public void knowsAboutMinus() throws Exception {
+        assertThat(queryProcessor.process("6e307340:%20what%20is%208%20minus%2016"), containsString("-8"));
+    }
 }
