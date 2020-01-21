@@ -31,7 +31,7 @@ public class QueryProcessorTest {
     }
 
     @Test
-    public void knowsAboutLargest() throws Exception {
-        assertThat(queryProcessor.process("a7f23550:%20which%20of%20the%20following%20numbers%20is%20the%20largest:%2067,%2028,%20489,%20707"), containsString("707"));
+    public void knowsAboutTheresa() throws Exception {
+        assertThat(queryProcessor.process("bedf66a0:%20which%20year%20was%20Theresa%20May%20first%20elected%20as%20the%20Prime%20Minister%20of%20Great%20Britain"), containsString("2016"));
     }
 }

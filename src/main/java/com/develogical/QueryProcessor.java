@@ -32,9 +32,9 @@ public class QueryProcessor {
             int max = Collections.max(intList);
             return String.valueOf(max);
         }
-//        else if (query.contains("multiplied")) {
-//
-//        }
+        else if (query.contains("Theresa")) {
+            return "2016";
+        }
 
         return "";
     }
