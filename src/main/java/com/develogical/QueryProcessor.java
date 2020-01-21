@@ -22,8 +22,8 @@ public class QueryProcessor {
             return "Red Arrow";
         }
         else if (query.contains("largest")) {
-            int index = query.indexOf(":");
-            query = query.substring(index + 2);
+            int index = query.indexOf("largest:");
+            query = query.substring(index + 9);
             String[] list = query.split(",");
             List<Integer> intList = new ArrayList<>();
             for (String s: list) {
@@ -31,8 +31,11 @@ public class QueryProcessor {
             }
             int max = Collections.max(intList);
             return String.valueOf(max);
-
         }
+//        else if (query.contains("multiplied")) {
+//
+//        }
+
         return "";
     }
 }
