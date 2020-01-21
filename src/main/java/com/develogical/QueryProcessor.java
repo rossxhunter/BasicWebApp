@@ -11,6 +11,9 @@ public class QueryProcessor {
         else if (query.toLowerCase().contains("imperial")) {
             return "Imperial is a university";
         }
+        else if (query.contains("what%20is%20your%20team%20name")) {
+            return "Red Arrow";
+        }
         return "";
     }
 }
