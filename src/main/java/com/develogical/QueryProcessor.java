@@ -10,6 +10,7 @@ public class QueryProcessor {
 
 
 
+
         query = query.replace("%20", " ");
 
         if (query.toLowerCase().contains("shakespeare")) {
