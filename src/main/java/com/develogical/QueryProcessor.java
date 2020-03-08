@@ -8,6 +8,7 @@ public class QueryProcessor {
 
     public String process(String query) {
 
+
         query = query.replace("%20", " ");
 
         if (query.toLowerCase().contains("shakespeare")) {
